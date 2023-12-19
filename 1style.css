@@ -1,0 +1,271 @@
+body {
+    background-color: #E7EBF0;
+}
+
+.black-bar {
+    background-color: black;
+    height: 100px;
+    width: 1920px;
+    position: absolute;
+    left: 50%;
+    margin-left: -960px;
+    top: 145px;
+}
+
+.button {
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid #E7EBF0;
+    background-color: #E7EBF0;
+    color: black;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background-color: #ddd;
+}
+
+.forms-button {
+    top: 165px;
+    left: 71px;
+}
+
+.login-button {
+    top: 50px;
+    left: 1320px;
+}
+
+.register-button {
+    top: 50px;
+    left: 1620px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    top: 295px;
+    left: 585px;
+    width: 750px;
+    height: 600px;
+    border-radius: 10px;
+    border: 1px solid #E7EBF0;
+    background-color: #E7EBF0;
+    position: absolute;
+}
+
+.login-modal {
+    width: 750px;
+    height: 650px;
+}
+
+.resetPassword {
+    width: 750px;
+    height: 5000px;
+}
+
+.changePassword {
+    width: 750px;
+    height: 5000px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.title {
+    text-align: center;
+}
+
+.register-input {
+    width: 300px;
+    height: 38px;
+    border-radius: 10px;
+    border: 1px solid #E7EBF0;
+    background-color: #E7EBF0;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-input {
+    width: 427px;
+    height: 38px;
+    border-radius: 10px;
+    border: 1px solid #E7EBF0;
+    background-color: #E7EBF0;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rstpswd-input {
+    width: 427px;
+    height: 38px;
+    border-radius: 10px;
+    border: 1px solid #E7EBF0;
+    background-color: #E7EBF0;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chngpswd-input {
+    width: 426px;
+    height: 38px;
+    left: 68px;
+    border-radius: 10px;
+    border: 1px solid #E7EBF0;
+    background-color: #E7EBF0;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.surnameInput {
+    top: 163px;
+    left: 406px;
+}
+
+.nameInput {
+    top: 227px;
+    left: 406px;
+}
+
+.middlenameInput {
+    top: 291px;
+    left: 406px;    
+}
+
+.regEmailInput {
+    top: 227px;
+    left: 44px;
+}
+
+.regPasswordInput {
+    top: 290px;
+    left: 44px;
+}
+
+.sign-up-button {
+    top: 369px;
+    left: 250px;
+    font-size: 18px;
+}
+
+.have-an-account {
+    width: 294px;
+    height: 27px;
+    top: 454px;
+    left: 228px;
+    cursor: pointer;
+    position: absolute;
+    font-size: 18px;
+    border: none;
+    background: none;
+}
+
+.create-an-account {
+    width: 294px;
+    height: 27px;
+    top: 399px;
+    left: 228px;
+    cursor: pointer;
+    position: absolute;
+    font-size: 18px;
+    border: none;
+    background: none;
+}
+
+.forgot-password {
+    width: 294px;
+    height: 27px;
+    top: 454px;
+    left: 228px;
+    cursor: pointer;
+    position: absolute;
+    font-size: 18px;
+    border: none;
+    background: none;
+}
+
+.logEmailInput {
+    top: 176px;
+    left: 161px;
+}
+
+.logPasswordInput {
+    top: 243px;
+    left: 161px;
+}
+
+.log-button {
+    width: 150px;
+    height: 60px;
+    top: 312px;
+    left: 300px;
+    font-size: 18px;
+}
+
+.rst-email-input {
+    top: 176px;
+    left: 68px;
+}
+
+.code-input {
+    top: 243px;
+    left: 68px;
+}
+
+.send-code-button {
+    width: 150px;
+    height: 38px;
+    top: 176px;
+    left: 510px;
+    font-size: 15px;
+}
+
+.send-password-button {
+    width: 150px;
+    height: 60px;
+    top: 312px;
+    left: 206px;
+    font-size: 18px;
+}
+
+.newpswd1 {
+    top: 176px;
+}
+
+.newpswd2 {
+    top: 243px;
+}
+
+.change-button {
+    width: 150px;
+    height: 60px;
+    top: 312px;
+    left: 206px;
+    font-size: 18px;
+}
