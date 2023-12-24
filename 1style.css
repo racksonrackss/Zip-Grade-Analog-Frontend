@@ -25,6 +25,7 @@ body {
     position: absolute;
     transition: background-color 0.3s;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Roboto, 'Source Sans Pro'
 }
 
 .button:hover {
@@ -54,6 +55,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    font-family: Roboto, 'Source Sans Pro'
 }
 
 .modal-content {
