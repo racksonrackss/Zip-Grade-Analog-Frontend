@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zip Grade Analog</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A500%2C700" />
+    <link rel="stylesheet" href="2style.css">
+    <script defer src="2script.js"></script>
+</head>
+
+<body>
+    <div class="profile">
+        <h1 class="user-data">Имя</h1>
+        <h2 class="user-data">Статус</h2>
+        <h3 class="user-data">Id</h3>
+    </div>
+
+    <div class="black-bar"></div>
+    <button class="button forms-button">Бланки Ответов</button>
+    <button class="button create-test">⊕ Создать Тест</button>
+
+    <div class="modal-content my-classes">
+        <h1 class="title">Мои классы</h1>
+
+        <div class="modal-content class-list">
+            <div class="column">
+                <h3 style="position: absolute; top: 8px; left: 10px;">Название</h3>
+            </div>
+            <div class="column">
+                <h3 style="position: absolute; top: 8px; left: 155px;">Кол-во</h3>
+            </div>
+        </div>
+
+        <div class="modal-content student-list">
+        </div>
+
+        <button class="button add-class" onclick="showCreateClassForm()">Добавить Класс</button>
+    </div>
+
+    <div class="modal" id="createClass">
+        <div class="modal-content create-class">
+            <h1 class="title">Создание Класса</h1>
+            <form>
+                <input class="input class-name" type="text" id="className" placeholder="Название">
+                <input class="input students-count" type="text" id="studentsCount"
+                    placeholder="Кол-Во Учащихся В Классе">
+            </form>
+            <button class="button create-class-button">Создать</button>
+            <span class="close" onclick="closeCreateClassForm()">&times;</span>
+        </div>
+    </div>
+
+    <div class="modal" id="addStudent">
+        <div class="modal-content add-student">
+            <h1 class="title">Добавить Ученика</h1>
+            <form>
+                <input class="input student-name" type="text" placeholder="Имя">
+                <input class="input student-id" type="text" placeholder="Id Ученика">
+            </form>
+            <span class="close" onclick="closeAddStudentForm()">&times;</span>
+            <button class="button add-student-button">Добавить</button>
+        </div>
+    </div>
+</body>
+
+</html>
