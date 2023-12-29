@@ -7,7 +7,6 @@
     <title>Zip Grade Analog</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A500%2C700" />
     <link rel="stylesheet" href="2style.css">
-    <script defer src="2script.js"></script>
 </head>
 
 <body>
@@ -19,7 +18,7 @@
 
     <div class="black-bar"></div>
     <button class="button forms-button">Бланки Ответов</button>
-    <button class="button create-test">⊕ Создать Тест</button>
+    <button class="button create-test" onclick="showAddTestForm()">+ Создать Тест</button>
 
     <div class="modal-content my-classes">
         <h1 class="title">Мои классы</h1>
@@ -47,7 +46,7 @@
                 <input class="input students-count" type="text" id="studentsCount"
                     placeholder="Кол-Во Учащихся В Классе">
             </form>
-            <button class="button create-class-button">Создать</button>
+            <button class="button create-class-button" id="createClassButton">Создать</button>
             <span class="close" onclick="closeCreateClassForm()">&times;</span>
         </div>
     </div>
@@ -63,6 +62,32 @@
             <button class="button add-student-button">Добавить</button>
         </div>
     </div>
-</body>
 
+    <div class="modal" id="add__test">
+        <div class="modal-content add-test">
+            <h1 class="title">Создание Теста</h1>
+            <ul class="menu">
+                <li class="classes-list"><a>Список Классов</a>
+                    <ul id="dynamicClassesList">
+                    </ul>
+                </li>
+
+                <input class="input add-test-input" type="text" placeholder="Название">
+
+                <li class="questions-count"><a>Кол-Во Вопросов</a>
+                    <ul>
+                        <li><a>20 вопросов</a></li>
+                        <li><a>40 вопросов</a></li>
+                        <li><a>60 вопросов</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <button class="button add-test-button">Создать</button>
+            <span class="close" onclick="closeAddTestForm()">&times;</span>
+        </div>
+    </div>
+
+    <script defer src="2script.js"></script>
+</body>
 </html>
