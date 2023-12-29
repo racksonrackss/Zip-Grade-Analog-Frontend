@@ -22,6 +22,18 @@ function closeAddStudentForm() {
     document.body.style.overflow = '';
 }
 
+function showAddTestForm() {
+    var modal = document.getElementById('add__test');
+    modal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+}
+
+function closeAddTestForm() {
+    var modal = document.getElementById('add__test');
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+}
+
 var classes = [];
 
 function addClass() {
@@ -40,6 +52,13 @@ function addClass() {
         document.getElementById('studentsCount').value = '';
 
         updateClassList();
+
+        var myList = document.getElementById("dynamicClassesList");
+        var liListItem = document.createElement("li");
+        var aListItem = document.createElement("a")
+        aListItem.appendChild(document.createTextNode(newClass.name));
+        liListItem.appendChild(aListItem);
+        myList.appendChild(liListItem);
     }
 }
 
@@ -55,7 +74,7 @@ function updateClassList() {
     classes.forEach(function (classItem) {
         var classRow = document.createElement('div');
         classRow.className = 'row';
-        classRow.innerHTML = '<div class="column">' + classItem.name + '</div><div class="column">' + '0/' + classItem.studentsCount + 
+        classRow.innerHTML = '<div class="column">' + classItem.name + '</div><div class="column">' + '0/' + classItem.studentsCount +
             '</div><div class="column"><button class="button new-student-button" onclick="showAddStudentForm()">+</button></div>';
         classListContainer.appendChild(classRow);
     });
